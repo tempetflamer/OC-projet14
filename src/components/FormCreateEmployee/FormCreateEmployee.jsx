@@ -120,7 +120,6 @@ export default function FormCreateEmployee() {
       zipCode.match(/^\d{5}$/gm) &&
       birthdateIsValid
     ) {
-      console.log('fdz')
       const employee = {
         firstName: firstName,
         lastName: lastName,
@@ -180,7 +179,7 @@ export default function FormCreateEmployee() {
           <label htmlFor="state">State</label>
           <select className="state" id="state" name="state" /* ref={stateRef} */>
             {states.map((val) => (
-              <option value={val.name} key={val.abbreviation}>
+              <option value={val.abbreviation} key={val.abbreviation}>
                 {val.name}
               </option>
             ))}
