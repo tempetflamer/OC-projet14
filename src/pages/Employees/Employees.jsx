@@ -139,9 +139,6 @@ export default function Employees() {
     )
   }, [filterText, resetPaginationToggle])
 
-  const employees = JSON.parse(localStorage.getItem('employees'))
-  console.log('localStorage: ', employees)
-
   if (!stateEmployee && !columns /* && !data */) {
     return ''
   }

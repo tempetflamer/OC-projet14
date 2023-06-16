@@ -142,32 +142,6 @@ export default function FormCreateEmployee() {
         toggleModal()
       }
     }
-
-    const employees = JSON.parse(localStorage.getItem('employees')) || []
-    // const employee = {
-    //   firstName: firstNameref.current.value,
-    //   lastName: lastNameRef.current.value,
-    //   dateOfBirth: birthdateRef.current.value,
-    //   startDate: startDateRef.current.value,
-    //   department: departmentRef.current.value,
-    //   street: streetRef.current.value,
-    //   city: cityRef.current.value,
-    //   state: stateRef.current.value,
-    //   zipCode: codeZipRef.current.value,
-    // }
-    const employee = {
-      firstName: e.target.firstname.value.trim(),
-      lastName: e.target.lastname.value.trim(),
-      dateOfBirth: e.target.birthdate.value,
-      startDate: e.target.startDate.value,
-      department: e.target.department.value,
-      street: e.target.street.value.trim(),
-      city: e.target.city.value.trim(),
-      state: e.target.state.value,
-      zipCode: e.target.code.value.trim(),
-    }
-    employees.push(employee)
-    localStorage.setItem('employees', JSON.stringify(employees))
   }
 
   function handleChangeDepartment(e) {
@@ -258,5 +232,3 @@ export default function FormCreateEmployee() {
     </form>
   )
 }
-
-FormCreateEmployee.propTypes = {}

@@ -10,7 +10,6 @@ import Users from '../../assets/images/users.png'
 
 export default function Header() {
   const { pathname } = useLocation()
-  console.log('pathname', pathname)
   const [name, setName] = useState(false)
 
   useEffect(() => {
