@@ -13,36 +13,33 @@ export default function Header() {
   console.log('pathname', pathname)
   const [name, setName] = useState(false)
 
-
   useEffect(() => {
     setName(pathname)
   }, [pathname])
 
   return (
     <header>
-      <NavLink to="/">
-        <img src={Logo} alt={'Wealth Health logo'} />
-      </NavLink>
+      <div className="logo--container">
+        <NavLink to="/">
+          <img className="logo" src={Logo} alt={'Wealth Health logo'} />
+        </NavLink>
+      </div>
       <h1>HRnet</h1>
       <nav>
-        {pathname === "/" ? (
+        {pathname === '/' ? (
           <NavLink to="/employees">
-            <img src={AddUser} alt={'Add user icon'} />
-            <span>Create</span>
+            <img className="menu-icon" src={Users} alt={'list of current users icon'} />
+            <span>Employees</span>
           </NavLink>
         ) : (
           <NavLink to="/">
-            <img src={Users} alt={'list of current users icon'} />
-            <span>Current employees</span>
+            <img className="menu-icon" src={AddUser} alt={'Add user icon'} />
+            <span>Create</span>
           </NavLink>
-        )
-
-        }
+        )}
       </nav>
     </header>
   )
 }
 
-Header.propTypes = {
-
-}
+Header.propTypes = {}

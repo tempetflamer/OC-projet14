@@ -1,3 +1,329 @@
+@import "../../utils//variables.scss";
+
 .employees {
-    
+}
+.search-input {
+    height: 32px;
+    width: 200px;
+    border-radius: 3px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 1px solid #e5e5e5;
+    padding: 0 32px 0 16px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.clearSearch {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 34px;
+    width: 32px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary-color;
+}
+
+.table--container {
+    // display: block;
+    // text-align: center;
+    //
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    //changé
+    // margin: 0 10%;
+    // width: 80%;
+    //pour
+    margin: 0 7.5%;
+    width: 85%;
+    //border-radius: 10px;
+    //box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.15);
+    //used to laiser de l'espace quand aucun élément est chargé car le message est trop près du bord bas
+    padding-bottom: 0.5rem;
+    background-color: #f5fffa;
+
+    @media (max-width: 1200px) {
+        margin: 0 2.5%;
+        width: 95%;
+    }
+
+    header {
+        border-radius: 10px 10px 0 0;
+        box-shadow: none; //enlever la valeur par defaut box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    div {
+        //border-radius: 10px;
+
+        // table pagination
+        nav {
+            border-radius: 0 0 10px 10px;
+        }
+
+        div {
+            .rdt_Table {
+                //margin-bottom: 0.5rem; //c aps tres beau en striped aevc ça mais en même sans données dans le tableau, il manque un padding, memettre encore plus générale dans ce acs
+            }
+        }
+    }
+}
+
+//column overide
+//the api dit d'utiliser ce code pour écraser l'ancien mais, il ne passe aps apr dessus les autres
+/* 
+.rdt_TableCol {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+.cygFkb {
+    padding-left: 1rem;
+    padding-right: 1rem;
+} 
+*/
+
+/*Header of table*/
+.rdt_TableHeadRow {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    .rdt_TableCol {
+        color: $primary-color-dark;
+        font-size: 0.9rem;
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: center;
+
+        .rdt_TableCol_Sortable {
+            //justify-content: center;
+        }
+    }
+}
+
+/* overide striped row theme */
+.kbfKfD {
+    background-color: #f9f9f9 !important;
+    color: $primary-color !important;
+}
+
+//search in custom styles to see if i conserv my modifcation in scss or i do it in custom style
+
+/*All row of table*/
+.rdt_TableRow {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    .rdt_TableCell {
+        display: flex;
+        justify-content: center;
+        div {
+            //default
+            /*
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            */
+            white-space: pre-line !important;
+        }
+    }
+}
+
+//header de la table
+// .sc-ikkxIA {
+//     border-radius: 10px;
+// }
+
+// Regle la taille des colonnes
+//data-column-id="9"
+
+.rdt_TableRow/* , */
+/* .rdt_TableHeadRow */ /* .rdt_TableCol */ {
+    //First Name
+    div[data-column-id="1"] {
+        width: 10%;
+    }
+    //Last Name
+    div[data-column-id="2"] {
+        width: 10%;
+    }
+    //Start date
+    div[data-column-id="3"] {
+        width: 10%;
+    }
+    //Department
+    div[data-column-id="4"] {
+        width: 12%;
+    }
+    //Date of Birth
+    div[data-column-id="5"] {
+        width: 10%;
+    }
+    //Street
+    div[data-column-id="6"] {
+        width: 18%;
+    }
+    //City
+    div[data-column-id="7"] {
+        width: 10%;
+    }
+    //State
+    div[data-column-id="8"] {
+        width: 12%; //after it will be AS so can be retrecit again
+    }
+    //Zip Code
+    div[data-column-id="9"] {
+        width: 8%;
+    }
+}
+
+//pas besoin il semble le faire tout seul, mais testont quand même
+// FirstName
+
+.rdt_TableCol[data-column-id="1"] {
+    width: 10%;
+}
+//Last Name
+.rdt_TableCol[data-column-id="2"] {
+    width: 10%;
+}
+//Start date
+.rdt_TableCol[data-column-id="3"] {
+    width: 10%;
+}
+//Department
+.rdt_TableCol[data-column-id="4"] {
+    width: 12%;
+}
+//Date of Birth
+.rdt_TableCol[data-column-id="5"] {
+    width: 10%;
+}
+//Street
+.rdt_TableCol[data-column-id="6"] {
+    width: 18%;
+}
+//City
+.rdt_TableCol[data-column-id="7"] {
+    width: 10%;
+}
+//State
+.rdt_TableCol[data-column-id="8"] {
+    width: 12%; //after it will be AS so can be retrecit again
+}
+//Zip Code
+.rdt_TableCol[data-column-id="9"] {
+    width: 8%;
+}
+
+//desactive flex car sinon toutes les colonnes snt de la même taille
+.ikexHN {
+    flex: none !important;
+}
+
+@media (max-width: 980px) {
+    .rdt_TableCol[data-column-id="1"] {
+        width: 6rem;
+    }
+    //Last Name
+    .rdt_TableCol[data-column-id="2"] {
+        width: 6rem;
+    }
+    //Start date
+    .rdt_TableCol[data-column-id="3"] {
+        width: 6rem;
+    }
+    //Department
+    .rdt_TableCol[data-column-id="4"] {
+        width: 6rem;
+    }
+    //Date of Birth
+    .rdt_TableColiv[data-column-id="5"] {
+        width: 6.5rem;
+    }
+    //Street
+    .rdt_TableCol[data-column-id="6"] {
+        width: 14rem;
+    }
+    //City
+    .rdt_TableCol[data-column-id="7"] {
+        width: 5rem;
+    }
+    //State
+    .rdt_TableCol[data-column-id="8"] {
+        width: 4rem;
+    }
+    //Zip Code
+    .rdt_TableCol[data-column-id="9"] {
+        width: 5rem;
+    }
+
+    .rdt_TableRow {
+        div[data-column-id="1"] {
+            width: 6rem;
+        }
+        //Last Name
+        div[data-column-id="2"] {
+            width: 6rem;
+        }
+        //Start date
+        div[data-column-id="3"] {
+            width: 6rem;
+        }
+        //Department
+        div[data-column-id="4"] {
+            width: 6rem;
+        }
+        //Date of Birth
+        div[data-column-id="5"] {
+            width: 6.5rem;
+        }
+        //Street
+        div[data-column-id="6"] {
+            width: 14rem;
+        }
+        //City
+        div[data-column-id="7"] {
+            width: 5rem;
+        }
+        //State
+        div[data-column-id="8"] {
+            width: 4rem;
+        }
+        //Zip Code
+        div[data-column-id="9"] {
+            width: 5rem;
+        }
+    }
+}
+
+// Scrollbar
+* {
+    scrollbar-width: thin;
+    scrollbar-color: $primary-color $primary-color-dark;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    // width: 12px; //sert à rien lol
+    height: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: $primary-color-dark;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: $primary-color;
+    border-radius: 20px;
+    border: 1px solid #584b53;
 }
