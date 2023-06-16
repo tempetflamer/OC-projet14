@@ -77,6 +77,28 @@
             }
         }
     }
+
+    // Scrollbar
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: $primary-color $primary-color-dark;
+    }
+
+    /* Works on Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+        // width: 12px; //sert à rien lol
+        height: 12px;
+    }
+
+    *::-webkit-scrollbar-track {
+        background: $primary-color-dark;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: $primary-color;
+        border-radius: 20px;
+        border: 1px solid #584b53;
+    }
 }
 
 //column overide
@@ -304,26 +326,4 @@
             width: 5rem;
         }
     }
-}
-
-// Scrollbar
-* {
-    scrollbar-width: thin;
-    scrollbar-color: $primary-color $primary-color-dark;
-}
-
-/* Works on Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-    // width: 12px; //sert à rien lol
-    height: 12px;
-}
-
-*::-webkit-scrollbar-track {
-    background: $primary-color-dark;
-}
-
-*::-webkit-scrollbar-thumb {
-    background-color: $primary-color;
-    border-radius: 20px;
-    border: 1px solid #584b53;
 }
