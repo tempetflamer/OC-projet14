@@ -7,13 +7,14 @@ import * as actions from '../../redux/reducer.js'
 
 import { useDispatch } from 'react-redux'
 
+import InputForm from '../InputForm/InputForm'
+
 export default function FormCreateEmployee() {
   const [errorMessage, setErrorMessage] = useState('')
   const [selectedDepartment, setSelectedDepartment] = useState('')
   const [modalIsDisplayed, setModalIsDisplayed] = useState(false)
   const [messageModal, setMessageModal] = useState('')
 
-  const birthdateRef = useRef()
   const errorMessageRef = useRef()
   const dispatch = useDispatch()
 
@@ -149,17 +150,11 @@ export default function FormCreateEmployee() {
 
   return (
     <form onSubmit={handleSubmit} className="form-new-employee">
-      <div className="input-wrapper">
-        <label htmlFor="firstname">First Name</label>
-        <input type="text" id="firstname" name="firstname" autoComplete="on" />
-      </div>
-      <div className="input-wrapper">
-        <label htmlFor="lastname">Last Name</label>
-        <input type="text" id="lastname" name="lastname" autoComplete="on" />
-      </div>
+      <InputForm text="First Name" type="text" name="firstname" autoComplete="on" />
+      <InputForm text="Last Name" type="text" name="lastname" autoComplete="on" /* required={false} */ />
       <div className="input-wrapper">
         <label htmlFor="birthdate">Date of Birth</label>
-        <input type="date" id="birthdate" name="birthdate" autoComplete="off" aria-required="true" ref={birthdateRef} onClick={initBirthdate} />
+        <input type="date" id="birthdate" name="birthdate" autoComplete="off" aria-required="true" onClick={initBirthdate} />
       </div>
       <div className="input-wrapper">
         <label htmlFor="start-date">Start Date</label>
@@ -167,14 +162,8 @@ export default function FormCreateEmployee() {
       </div>
       <fieldset className="address--container">
         <legend className="address--legend">Address</legend>
-        <div className="input-wrapper">
-          <label htmlFor="street">Street</label>
-          <input type="text" id="street" name="street" autoComplete="on" />
-        </div>
-        <div className="input-wrapper">
-          <label htmlFor="city">City</label>
-          <input type="text" id="city" name="city" autoComplete="on" />
-        </div>
+        <InputForm text="Street" type="text" name="street" autoComplete="on" />
+        <InputForm text="City" type="text" name="city" autoComplete="on" />
         <div className="input-wrapper">
           <label htmlFor="state">State</label>
           <select className="state" id="state" name="state" /* ref={stateRef} */>
@@ -187,8 +176,20 @@ export default function FormCreateEmployee() {
         </div>
         <div className="input-wrapper">
           <label htmlFor="code">Zip code</label>
-          <input type="number" id="code" name="code" minLength="5" maxLength="5" autoComplete="on" />
-          {/* normally zip code is a type="number" */}
+          <input
+            type="number"
+            id="code"
+            name="code"
+            minLength="5"
+            maxLength="5"
+            // pattern="[0-9]{5}"
+            // size="5"
+            // min="0"
+            // max="99999"
+            // step="5"
+            autoComplete="on"
+          />
+          {/* normally zip code is a type="number" but numer don't work for limited maxLenght on the input*/}
         </div>
       </fieldset>
 
@@ -198,9 +199,9 @@ export default function FormCreateEmployee() {
           className="department"
           id="department"
           name="department"
-          onChange={handleChangeDepartment}
-          value={selectedDepartment}
-          /* ref={departmentRef} */
+          //je crois que c'est deux éléments en servent à rien
+          // onChange={handleChangeDepartment}
+          // value={selectedDepartment}
         >
           {departments.map((val) => (
             <option value={val.name} key={val.name}>
