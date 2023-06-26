@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import CreateEmployee from '../../components/FormCreateEmployee/FormCreateEmployee'
 import Layout from '../../components/Layout/Layout'
 
@@ -11,5 +10,3 @@ export default function Home() {
     </Layout>
   )
 }
-
-Home.propTypes = {}

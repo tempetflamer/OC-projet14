@@ -1,3 +1,36 @@
-.modalform {
-    
+@import "../../utils//variables.scss";
+
+.background-modal {
+    position: fixed;
+    inset: 0px;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .modal {
+        background-color: $primary-color;
+        border-radius: 20px;
+        padding: 0.5rem 2.5rem 1rem 2.5rem;
+        position: relative;
+        min-width: 200px;
+
+        .message {
+            color: $third-color;
+        }
+        .close-modal {
+            background-color: $primary-color-dark;
+            border-radius: 50%;
+            border-radius: $third-color;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: absolute;
+            right: -6px;
+            top: -6px;
+        }
+    }
 }

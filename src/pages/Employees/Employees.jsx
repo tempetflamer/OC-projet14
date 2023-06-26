@@ -1,21 +1,19 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Layout from '../../components/Layout/Layout'
-import { useSelector } from 'react-redux'
-import { useCallback } from 'react'
-import { useEffect } from 'react'
+import React, { useMemo, useState } from 'react'
 import DataTable, { createTheme } from 'react-data-table-component'
-import { useState } from 'react'
+import Layout from '../../components/Layout/Layout'
+import { useEmployeeState } from '../../utils/EmployeeContext.jsx'
 import './Employees.scss'
-import { useMemo } from 'react'
+import { columns } from '../../data/data.js'
 
 export default function Employees() {
-  const stateEmployee = useSelector((state) => state.employee.employees)
+  const { employees } = useEmployeeState()
   const [filterText, setFilterText] = useState('')
   const [resetPaginationToggle, setResetPaginationToggle] = useState(false)
 
-  //filter system, filter everything
-  const filteredItems = stateEmployee.filter(
+  /**
+   *  Create a filter to search for an element in all items in each column
+   */
+  const filteredItems = employees.filter(
     (item) =>
       item.firstName.toLowerCase().includes(filterText.toLowerCase()) ||
       item.lastName.toLowerCase().includes(filterText.toLowerCase()) ||
@@ -28,7 +26,9 @@ export default function Employees() {
       item.startDate.toLowerCase().includes(filterText.toLowerCase())
   )
 
-  // createTheme create a new theme named wealth-health that overrides the build in light theme
+  /**
+   * createTheme create a new theme named wealth-health that overrides the build in light theme
+   */
   createTheme(
     'wealth-health',
     {
@@ -55,64 +55,9 @@ export default function Employees() {
     'light'
   )
 
-  // create column for table
-  const columns = [
-    {
-      name: 'First Name',
-      selector: (row) => row.firstName,
-      sortable: true,
-      style: {},
-    },
-    {
-      name: 'Last Name',
-      selector: (row) => row.lastName,
-      sortable: true,
-      style: {},
-    },
-    {
-      name: 'Start Date',
-      selector: (row) => row.startDate,
-      sortable: true,
-      style: {},
-    },
-    {
-      name: 'Department',
-      selector: (row) => row.department,
-      sortable: true,
-      style: {},
-    },
-    {
-      name: 'Date of Birth',
-      selector: (row) => row.dateOfBirth,
-      sortable: true,
-      style: {},
-    },
-    {
-      name: 'Street',
-      selector: (row) => row.street,
-      sortable: true,
-      style: {},
-    },
-    {
-      name: 'City',
-      selector: (row) => row.city,
-      sortable: true,
-      style: {},
-    },
-    {
-      name: 'State',
-      selector: (row) => row.state,
-      sortable: true,
-      style: {},
-    },
-    {
-      name: 'Zip Code',
-      selector: (row) => row.zipCode,
-      sortable: true,
-      style: {},
-    },
-  ]
-
+  /**
+   * Create a sub-header that will contain the search system to look for an element in the table.
+   */
   const subHeaderComponentMemo = useMemo(() => {
     const handleClear = () => {
       if (filterText) {
@@ -139,10 +84,9 @@ export default function Employees() {
     )
   }, [filterText, resetPaginationToggle])
 
-  if (!stateEmployee && !columns /* && !data */) {
+  if (!employees && !columns) {
     return ''
   }
-  console.log('stateEemployee', stateEmployee, typeof stateEmployee)
   return (
     <Layout>
       <h2>Current Employee</h2>
@@ -153,7 +97,6 @@ export default function Employees() {
           theme="wealth-health"
           pagination
           paginationRowsPerPageOptions={[10, 25, 50, 100]}
-          //paginationResetDefaultPage={resetPaginationToggle} // optionally, a hook to reset pagination to page 1
           subHeader
           subHeaderComponent={subHeaderComponentMemo}
           noDataComponent="No employee found"

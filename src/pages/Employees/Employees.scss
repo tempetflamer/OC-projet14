@@ -1,7 +1,5 @@
 @import "../../utils//variables.scss";
 
-.employees {
-}
 .search-input {
     height: 32px;
     width: 200px;
@@ -12,9 +10,20 @@
     border-bottom-right-radius: 0;
     border: 1px solid #e5e5e5;
     padding: 0 32px 0 16px;
+    @media (max-width: 767px) {
+        padding: 0 24px 0 12px;
+        width: 140px;
+        height: 28px;
+    }
 
     &:hover {
         cursor: pointer;
+    }
+}
+
+.search-input::placeholder {
+    @media (max-width: 767px) {
+        font-size: 0.75rem;
     }
 }
 
@@ -30,26 +39,20 @@
     align-items: center;
     justify-content: center;
     background-color: $primary-color;
+    @media (max-width: 767px) {
+        font-size: 0.8rem;
+        height: 28px;
+        width: 26px;
+    }
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .table--container {
-    // display: block;
-    // text-align: center;
-    //
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
-    //changé
-    // margin: 0 10%;
-    // width: 80%;
-    //pour
     margin: 0 7.5%;
     width: 85%;
-    //border-radius: 10px;
-    //box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.15);
-    //used to laiser de l'espace quand aucun élément est chargé car le message est trop près du bord bas
     padding-bottom: 0.5rem;
     background-color: #f5fffa;
 
@@ -60,21 +63,12 @@
 
     header {
         border-radius: 10px 10px 0 0;
-        box-shadow: none; //enlever la valeur par defaut box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+        box-shadow: none;
     }
 
     div {
-        //border-radius: 10px;
-
-        // table pagination
         nav {
             border-radius: 0 0 10px 10px;
-        }
-
-        div {
-            .rdt_Table {
-                //margin-bottom: 0.5rem; //c aps tres beau en striped aevc ça mais en même sans données dans le tableau, il manque un padding, memettre encore plus générale dans ce acs
-            }
         }
     }
 
@@ -86,7 +80,6 @@
 
     /* Works on Chrome, Edge, and Safari */
     *::-webkit-scrollbar {
-        // width: 12px; //sert à rien lol
         height: 12px;
     }
 
@@ -101,19 +94,6 @@
     }
 }
 
-//column overide
-//the api dit d'utiliser ce code pour écraser l'ancien mais, il ne passe aps apr dessus les autres
-/* 
-.rdt_TableCol {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-}
-.cygFkb {
-    padding-left: 1rem;
-    padding-right: 1rem;
-} 
-*/
-
 /*Header of table*/
 .rdt_TableHeadRow {
     padding-left: 0.5rem;
@@ -125,10 +105,6 @@
         padding-left: 0;
         padding-right: 0;
         justify-content: center;
-
-        .rdt_TableCol_Sortable {
-            //justify-content: center;
-        }
     }
 }
 
@@ -137,8 +113,6 @@
     background-color: #f9f9f9 !important;
     color: $primary-color !important;
 }
-
-//search in custom styles to see if i conserv my modifcation in scss or i do it in custom style
 
 /*All row of table*/
 .rdt_TableRow {
@@ -149,27 +123,12 @@
         display: flex;
         justify-content: center;
         div {
-            //default
-            /*
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            */
             white-space: pre-line !important;
         }
     }
 }
 
-//header de la table
-// .sc-ikkxIA {
-//     border-radius: 10px;
-// }
-
-// Regle la taille des colonnes
-//data-column-id="9"
-
-.rdt_TableRow/* , */
-/* .rdt_TableHeadRow */ /* .rdt_TableCol */ {
+.rdt_TableRow {
     //First Name
     div[data-column-id="1"] {
         width: 10%;
@@ -208,9 +167,7 @@
     }
 }
 
-//pas besoin il semble le faire tout seul, mais testont quand même
 // FirstName
-
 .rdt_TableCol[data-column-id="1"] {
     width: 10%;
 }
@@ -240,14 +197,14 @@
 }
 //State
 .rdt_TableCol[data-column-id="8"] {
-    width: 12%; //after it will be AS so can be retrecit again
+    width: 12%;
 }
 //Zip Code
 .rdt_TableCol[data-column-id="9"] {
     width: 8%;
 }
 
-//desactive flex car sinon toutes les colonnes snt de la même taille
+//Column
 .ikexHN {
     flex: none !important;
 }

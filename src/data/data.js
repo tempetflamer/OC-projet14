@@ -1,242 +1,248 @@
+/**
+ * Dropdown states data
+ */
 export const states = [
     {
         name: "Alabama",
-        abbreviation: "AL"
+        value: "AL"
     },
     {
         name: "Alaska",
-        abbreviation: "AK"
+        value: "AK"
     },
     {
         name: "American Samoa",
-        abbreviation: "AS"
+        value: "AS"
     },
     {
         name: "Arizona",
-        abbreviation: "AZ"
+        value: "AZ"
     },
     {
         name: "Arkansas",
-        abbreviation: "AR"
+        value: "AR"
     },
     {
         name: "California",
-        abbreviation: "CA"
+        value: "CA"
     },
     {
         name: "Colorado",
-        abbreviation: "CO"
+        value: "CO"
     },
     {
         name: "Connecticut",
-        abbreviation: "CT"
+        value: "CT"
     },
     {
         name: "Delaware",
-        abbreviation: "DE"
+        value: "DE"
     },
     {
         name: "District Of Columbia",
-        abbreviation: "DC"
+        value: "DC"
     },
     {
         name: "Federated States Of Micronesia",
-        abbreviation: "FM"
+        value: "FM"
     },
     {
         name: "Florida",
-        abbreviation: "FL"
+        value: "FL"
     },
     {
         name: "Georgia",
-        abbreviation: "GA"
+        value: "GA"
     },
     {
         name: "Guam",
-        abbreviation: "GU"
+        value: "GU"
     },
     {
         name: "Hawaii",
-        abbreviation: "HI"
+        value: "HI"
     },
     {
         name: "Idaho",
-        abbreviation: "ID"
+        value: "ID"
     },
     {
         name: "Illinois",
-        abbreviation: "IL"
+        value: "IL"
     },
     {
         name: "Indiana",
-        abbreviation: "IN"
+        value: "IN"
     },
     {
         name: "Iowa",
-        abbreviation: "IA"
+        value: "IA"
     },
     {
         name: "Kansas",
-        abbreviation: "KS"
+        value: "KS"
     },
     {
         name: "Kentucky",
-        abbreviation: "KY"
+        value: "KY"
     },
     {
         name: "Louisiana",
-        abbreviation: "LA"
+        value: "LA"
     },
     {
         name: "Maine",
-        abbreviation: "ME"
+        value: "ME"
     },
     {
         name: "Marshall Islands",
-        abbreviation: "MH"
+        value: "MH"
     },
     {
         name: "Maryland",
-        abbreviation: "MD"
+        value: "MD"
     },
     {
         name: "Massachusetts",
-        abbreviation: "MA"
+        value: "MA"
     },
     {
         name: "Michigan",
-        abbreviation: "MI"
+        value: "MI"
     },
     {
         name: "Minnesota",
-        abbreviation: "MN"
+        value: "MN"
     },
     {
         name: "Mississippi",
-        abbreviation: "MS"
+        value: "MS"
     },
     {
         name: "Missouri",
-        abbreviation: "MO"
+        value: "MO"
     },
     {
         name: "Montana",
-        abbreviation: "MT"
+        value: "MT"
     },
     {
         name: "Nebraska",
-        abbreviation: "NE"
+        value: "NE"
     },
     {
         name: "Nevada",
-        abbreviation: "NV"
+        value: "NV"
     },
     {
         name: "New Hampshire",
-        abbreviation: "NH"
+        value: "NH"
     },
     {
         name: "New Jersey",
-        abbreviation: "NJ"
+        value: "NJ"
     },
     {
         name: "New Mexico",
-        abbreviation: "NM"
+        value: "NM"
     },
     {
         name: "New York",
-        abbreviation: "NY"
+        value: "NY"
     },
     {
         name: "North Carolina",
-        abbreviation: "NC"
+        value: "NC"
     },
     {
         name: "North Dakota",
-        abbreviation: "ND"
+        value: "ND"
     },
     {
         name: "Northern Mariana Islands",
-        abbreviation: "MP"
+        value: "MP"
     },
     {
         name: "Ohio",
-        abbreviation: "OH"
+        value: "OH"
     },
     {
         name: "Oklahoma",
-        abbreviation: "OK"
+        value: "OK"
     },
     {
         name: "Oregon",
-        abbreviation: "OR"
+        value: "OR"
     },
     {
         name: "Palau",
-        abbreviation: "PW"
+        value: "PW"
     },
     {
         name: "Pennsylvania",
-        abbreviation: "PA"
+        value: "PA"
     },
     {
         name: "Puerto Rico",
-        abbreviation: "PR"
+        value: "PR"
     },
     {
         name: "Rhode Island",
-        abbreviation: "RI"
+        value: "RI"
     },
     {
         name: "South Carolina",
-        abbreviation: "SC"
+        value: "SC"
     },
     {
         name: "South Dakota",
-        abbreviation: "SD"
+        value: "SD"
     },
     {
         name: "Tennessee",
-        abbreviation: "TN"
+        value: "TN"
     },
     {
         name: "Texas",
-        abbreviation: "TX"
+        value: "TX"
     },
     {
         name: "Utah",
-        abbreviation: "UT"
+        value: "UT"
     },
     {
         name: "Vermont",
-        abbreviation: "VT"
+        value: "VT"
     },
     {
         name: "Virgin Islands",
-        abbreviation: "VI"
+        value: "VI"
     },
     {
         name: "Virginia",
-        abbreviation: "VA"
+        value: "VA"
     },
     {
         name: "Washington",
-        abbreviation: "WA"
+        value: "WA"
     },
     {
         name: "West Virginia",
-        abbreviation: "WV"
+        value: "WV"
     },
     {
         name: "Wisconsin",
-        abbreviation: "WI"
+        value: "WI"
     },
     {
         name: "Wyoming",
-        abbreviation: "WY"
+        value: "WY"
     }
 ]
 
+/**
+ * Dropdown departments data
+ */
 export const departments = [
     {
         name: 'Sales'
@@ -255,416 +261,62 @@ export const departments = [
     }
 ]
 
-export const table_columns = [
-    { title: 'First Name', data: 'firstName' },
-    { title: 'Last Name', data: 'lastName' },
-    { title: 'Start Date', data: 'startDate' },
-    { title: 'Department', data: 'department' },
-    { title: 'Date of Birth', data: 'dateOfBirth' },
-    { title: 'Street', data: 'street' },
-    { title: 'City', data: 'city' },
-    { title: 'State', data: 'state' },
-    { title: 'Zip Code', data: 'zipCode' },
-
-    // {
-    //     name: 'First Name',
-    //     class: 'firstname'
-    // },
-    // {
-    //     name: 'Last Name',
-    //     class: 'lastname'
-    // },
-    // {
-    //     name: 'Start Date',
-    //     class: 'startdate'
-    // },
-    // {
-    //     name: 'Departement',
-    //     class: 'departement'
-    // },
-    // {
-    //     name: 'Date of Birth',
-    //     class: 'birthdate'
-    // },
-    // {
-    //     name: 'Street',
-    //     class: 'street'
-    // },
-    // {
-    //     name: 'City',
-    //     class: 'city'
-    // },
-    // {
-    //     name: 'State',
-    //     class: 'state'
-    // },
-    // {
-    //     name: 'Zip Code',
-    //     class: 'code'
-    // }
+/**
+ * Create column for table
+ */
+export const columns = [
+    {
+        name: 'First Name',
+        selector: (row) => row.firstName,
+        sortable: true,
+        style: {},
+    },
+    {
+        name: 'Last Name',
+        selector: (row) => row.lastName,
+        sortable: true,
+        style: {},
+    },
+    {
+        name: 'Start Date',
+        selector: (row) => row.startDate,
+        sortable: true,
+        style: {},
+    },
+    {
+        name: 'Department',
+        selector: (row) => row.department,
+        sortable: true,
+        style: {},
+    },
+    {
+        name: 'Date of Birth',
+        selector: (row) => row.dateOfBirth,
+        sortable: true,
+        style: {},
+    },
+    {
+        name: 'Street',
+        selector: (row) => row.street,
+        sortable: true,
+        style: {},
+    },
+    {
+        name: 'City',
+        selector: (row) => row.city,
+        sortable: true,
+        style: {},
+    },
+    {
+        name: 'State',
+        selector: (row) => row.state,
+        sortable: true,
+        style: {},
+    },
+    {
+        name: 'Zip Code',
+        selector: (row) => row.zipCode,
+        sortable: true,
+        style: {},
+    },
 ]
-
-export const table_data =
-    [
-        {
-            id: 1,
-            firstName: 'Nicolas',
-            lastName: 'Lecroq',
-            startDate: '01/01/2021',
-            department: 'Sales',
-            dateOfBirth: '03/01/1997',
-            street: 'Bryant Park',
-            city: 'New York',
-            state: 'New York',
-            zipCode: 10001
-        },
-        {
-            id: 2,
-            firstName: 'Nicolas',
-            lastName: 'Lecroq',
-            startDate: '01/01/2021',
-            department: 'Sales',
-            dateOfBirth: '03/01/1997',
-            street: 'Bryant Park',
-            city: 'New York',
-            state: 'New York',
-            zipCode: 10001
-        },
-        {
-            id: 3,
-            firstName: 'Nicolas',
-            lastName: 'Lecroq',
-            startDate: '01/01/2021',
-            department: 'Sales',
-            dateOfBirth: '03/01/1997',
-            street: 'Bryant Park',
-            city: 'New York',
-            state: 'New York',
-            zipCode: 10001
-        },
-        {
-            id: 4,
-            firstName: 'Nicolas',
-            lastName: 'Lecroq',
-            startDate: '01/01/2021',
-            department: 'Sales',
-            dateOfBirth: '03/01/1997',
-            street: 'Bryant Park',
-            city: 'New York',
-            state: 'New York',
-            zipCode: 10001
-        },
-        {
-            id: 5,
-            firstName: 'Nicolas',
-            lastName: 'Lecroq',
-            startDate: '01/01/2021',
-            department: 'Sales',
-            dateOfBirth: '03/01/1997',
-            street: 'Bryant Park',
-            city: 'New York',
-            state: 'New York',
-            zipCode: 10001
-        },
-        {
-            id: 6,
-            firstName: 'Nicolas',
-            lastName: 'Lecroq',
-            startDate: '01/01/2021',
-            department: 'Sales',
-            dateOfBirth: '03/01/1997',
-            street: 'Bryant Park',
-            city: 'New York',
-            state: 'New York',
-            zipCode: 10001
-        },
-        {
-            id: 7,
-            firstName: 'Nicolas',
-            lastName: 'Lecroq',
-            startDate: '01/01/2021',
-            department: 'Sales',
-            dateOfBirth: '03/01/1997',
-            street: 'Bryant Park',
-            city: 'New York',
-            state: 'New York',
-            zipCode: 10001
-        },
-        {
-            id: 8,
-            firstName: 'Nicolas',
-            lastName: 'Lecroq',
-            startDate: '01/01/2021',
-            department: 'Sales',
-            dateOfBirth: '03/01/1997',
-            street: 'Bryant Park',
-            city: 'New York',
-            state: 'New York',
-            zipCode: 10001
-        },
-        {
-            id: 9,
-            firstName: 'Nicolas',
-            lastName: 'Lecroq',
-            startDate: '01/01/2021',
-            department: 'Sales',
-            dateOfBirth: '03/01/1997',
-            street: 'Bryant Park',
-            city: 'New York',
-            state: 'New York',
-            zipCode: 10001
-        },
-        {
-            id: 10,
-            firstName: 'Nicolas',
-            lastName: 'Lecroq',
-            startDate: '01/01/2021',
-            department: 'Sales',
-            dateOfBirth: '03/01/1997',
-            street: 'Bryant Park',
-            city: 'New York',
-            state: 'New York',
-            zipCode: 10001
-        },
-        {
-            id: 11,
-            firstName: 'Nicolas',
-            lastName: 'Lecroq',
-            startDate: '01/01/2021',
-            department: 'Sales',
-            dateOfBirth: '03/01/1997',
-            street: 'Bryant Park',
-            city: 'New York',
-            state: 'New York',
-            zipCode: 10001
-        },
-        {
-            id: 12,
-            firstName: 'Nicolas',
-            lastName: 'Lecroq',
-            startDate: '01/01/2021',
-            department: 'Sales',
-            dateOfBirth: '03/01/1997',
-            street: 'Bryant Park',
-            city: 'New York',
-            state: 'New York',
-            zipCode: 10001
-        },
-        {
-            id: 13,
-            firstName: 'Nicolas',
-            lastName: 'Lecroq',
-            startDate: '01/01/2021',
-            department: 'Sales',
-            dateOfBirth: '03/01/1997',
-            street: 'Bryant Park',
-            city: 'New York',
-            state: 'New York',
-            zipCode: 10001
-        },
-        {
-            id: 14,
-            firstName: 'Nicolas',
-            lastName: 'Lecroq',
-            startDate: '01/01/2021',
-            department: 'Sales',
-            dateOfBirth: '03/01/1997',
-            street: 'Bryant Park',
-            city: 'New York',
-            state: 'New York',
-            zipCode: 10001
-        },
-        {
-            id: 15,
-            firstName: 'Nicolas',
-            lastName: 'Lecroq',
-            startDate: '01/01/2021',
-            department: 'Sales',
-            dateOfBirth: '03/01/1997',
-            street: 'Bryant Park',
-            city: 'New York',
-            state: 'New York',
-            zipCode: 10001
-        },
-        {
-            id: 16,
-            firstName: 'Nicolas',
-            lastName: 'Lecroq',
-            startDate: '01/01/2021',
-            department: 'Sales',
-            dateOfBirth: '03/01/1997',
-            street: 'Bryant Park',
-            city: 'New York',
-            state: 'New York',
-            zipCode: 10001
-        },
-        {
-            id: 17,
-            firstName: 'Nicolas',
-            lastName: 'Lecroq',
-            startDate: '01/01/2021',
-            department: 'Sales',
-            dateOfBirth: '03/01/1997',
-            street: 'Bryant Park',
-            city: 'New York',
-            state: 'New York',
-            zipCode: 10001
-        },
-        {
-            id: 18,
-            firstName: 'Nicolas',
-            lastName: 'Lecroq',
-            startDate: '01/01/2021',
-            department: 'Sales',
-            dateOfBirth: '03/01/1997',
-            street: 'Bryant Park',
-            city: 'New York',
-            state: 'New York',
-            zipCode: 10001
-        },
-        {
-            id: 19,
-            firstName: 'Nicolas',
-            lastName: 'Lecroq',
-            startDate: '01/01/2021',
-            department: 'Sales',
-            dateOfBirth: '03/01/1997',
-            street: 'Bryant Park',
-            city: 'New York',
-            state: 'New York',
-            zipCode: 10001
-        },
-        {
-            id: 20,
-            firstName: 'Nicolas',
-            lastName: 'Lecroq',
-            startDate: '01/01/2021',
-            department: 'Sales',
-            dateOfBirth: '03/01/1997',
-            street: 'Bryant Park',
-            city: 'New York',
-            state: 'New York',
-            zipCode: 10001
-        },
-        {
-            id: 21,
-            firstName: 'Nicolas',
-            lastName: 'Lecroq',
-            startDate: '01/01/2021',
-            department: 'Sales',
-            dateOfBirth: '03/01/1997',
-            street: 'Bryant Park',
-            city: 'New York',
-            state: 'New York',
-            zipCode: 10001
-        },
-        {
-            id: 22,
-            firstName: 'Nicolas',
-            lastName: 'Lecroq',
-            startDate: '01/01/2021',
-            department: 'Sales',
-            dateOfBirth: '03/01/1997',
-            street: 'Bryant Park',
-            city: 'New York',
-            state: 'New York',
-            zipCode: 10001
-        },
-        {
-            id: 23,
-            firstName: 'Nicolas',
-            lastName: 'Lecroq',
-            startDate: '01/01/2021',
-            department: 'Sales',
-            dateOfBirth: '03/01/1997',
-            street: 'Bryant Park',
-            city: 'New York',
-            state: 'New York',
-            zipCode: 10001
-        },
-        {
-            id: 24,
-            firstName: 'Nicolas',
-            lastName: 'Lecroq',
-            startDate: '01/01/2021',
-            department: 'Sales',
-            dateOfBirth: '03/01/1997',
-            street: 'Bryant Park',
-            city: 'New York',
-            state: 'New York',
-            zipCode: 10001
-        },
-        {
-            id: 25,
-            firstName: 'Nicolas',
-            lastName: 'Lecroq',
-            startDate: '01/01/2021',
-            department: 'Sales',
-            dateOfBirth: '03/01/1997',
-            street: 'Bryant Park',
-            city: 'New York',
-            state: 'New York',
-            zipCode: 10001
-        },
-        {
-            id: 26,
-            firstName: 'Nicolas',
-            lastName: 'Lecroq',
-            startDate: '01/01/2021',
-            department: 'Sales',
-            dateOfBirth: '03/01/1997',
-            street: 'Bryant Park',
-            city: 'New York',
-            state: 'New York',
-            zipCode: 10001
-        },
-        {
-            id: 27,
-            firstName: 'Nicolas',
-            lastName: 'Lecroq',
-            startDate: '01/01/2021',
-            department: 'Sales',
-            dateOfBirth: '03/01/1997',
-            street: 'Bryant Park',
-            city: 'New York',
-            state: 'New York',
-            zipCode: 10001
-        },
-        {
-            id: 28,
-            firstName: 'Nicolas',
-            lastName: 'Lecroq',
-            startDate: '01/01/2021',
-            department: 'Sales',
-            dateOfBirth: '03/01/1997',
-            street: 'Bryant Park',
-            city: 'New York',
-            state: 'New York',
-            zipCode: 10001
-        },
-        {
-            id: 29,
-            firstName: 'Nicolas',
-            lastName: 'Lecroq',
-            startDate: '01/01/2021',
-            department: 'Sales',
-            dateOfBirth: '03/01/1997',
-            street: 'Bryant Park',
-            city: 'New York',
-            state: 'New York',
-            zipCode: 10001
-        },
-        {
-            id: 30,
-            firstName: 'Nicolas',
-            lastName: 'Lecroq',
-            startDate: '01/01/2021',
-            department: 'Sales',
-            dateOfBirth: '03/01/1997',
-            street: 'Bryant Park',
-            city: 'New York',
-            state: 'New York',
-            zipCode: 10001
-        }
-
-    ]
