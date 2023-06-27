@@ -1,20 +1,12 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { NavLink } from 'react-router-dom'
-import Logo from '../../assets/images/logo.png'
-import { useEffect, useState } from 'react'
-import { useLocation } from 'react-router-dom'
-import './Header.scss'
+import { NavLink, useLocation } from 'react-router-dom'
 import AddUser from '../../assets/images/add-user.png'
+import Logo from '../../assets/images/logo.png'
 import Users from '../../assets/images/users.png'
+import './Header.scss'
 
 export default function Header() {
   const { pathname } = useLocation()
-  const [name, setName] = useState(false)
-
-  useEffect(() => {
-    setName(pathname)
-  }, [pathname])
 
   return (
     <header>
@@ -40,5 +32,3 @@ export default function Header() {
     </header>
   )
 }
-
-Header.propTypes = {}

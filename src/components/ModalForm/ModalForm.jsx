@@ -3,6 +3,11 @@ import PropTypes from 'prop-types'
 import './ModalForm.scss'
 import FocusLock from 'react-focus-lock'
 
+/**
+ * @param {func} toggleModal
+ * @param {string} messageModal
+ * @returns {JSX.Element}
+ */
 export default function ModalForm({ toggleModal, messageModal }) {
   return (
     <div className="background-modal" onClick={toggleModal}>

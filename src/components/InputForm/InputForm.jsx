@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 /**
- *
  * @param {string} text
  * @param {string} type
  * @param {string} id
@@ -10,7 +9,7 @@ import PropTypes from 'prop-types'
  * @param {string} autoComplete
  * @param {string} name
  * @param {func} onClick
- * @returns
+ * @returns {JSX.Element}
  */
 export default function InputForm({ text, type, id, name, autoComplete, onClick }) {
   return (

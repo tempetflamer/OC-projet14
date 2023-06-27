@@ -12,7 +12,7 @@ header {
 
     .logo {
         width: 5rem;
-        height: auto;
+        height: 3.813rem;
 
         &--container {
             width: 7.5rem;
@@ -23,7 +23,7 @@ header {
         color: $primary-color-dark;
     }
     nav {
-        width: 7.5rem; //120px = 7.5rem
+        width: 7.5rem;
         display: flex;
         justify-content: right;
         a {
@@ -32,7 +32,7 @@ header {
             gap: 0.5rem;
             .menu-icon {
                 width: 1.5rem;
-                height: auto;
+                height: 1.5rem;
             }
         }
     }

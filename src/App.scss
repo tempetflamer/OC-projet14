@@ -23,7 +23,6 @@ h1 {
 }
 
 /* Set */
-
 #root {
   display: flex;
   flex-direction: column;
@@ -35,23 +34,9 @@ body {
   text-align: center;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  background-color: rgba(222, 229, 229, 0.3); //#dee5e5
+  background-color: rgba(222, 229, 229, 0.3);
 }
 
 p {
   line-height: 1.5rem;
-}
-
-.sr-only {
-  border: 0 !important;
-  clip: rect(1px, 1px, 1px, 1px) !important;
-  -webkit-clip-path: inset(50%) !important;
-  clip-path: inset(50%) !important;
-  height: 1px !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  padding: 0 !important;
-  position: absolute !important;
-  width: 1px !important;
-  white-space: nowrap !important;
 }

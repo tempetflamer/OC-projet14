@@ -39,7 +39,7 @@
             justify-content: right;
             position: relative;
             font-weight: 500;
-            color: white;
+            color: black;
             font-style: italic;
             top: 10px;
             font-size: 18px;
@@ -53,9 +53,9 @@
 
     .btn-save {
         background-color: $primary-color;
+        color: black;
         border: none;
         border-radius: 0.5rem;
-        color: white;
         cursor: pointer;
         display: block;
         font-size: 1rem;
@@ -63,9 +63,12 @@
         margin: 1.5rem auto 0;
         padding: 10px;
         width: 100px;
+        font-family: "Roboto", sans-serif;
+        letter-spacing: 0.1rem;
 
         &:hover {
             background-color: $primary-color-dark;
+            color: white;
         }
     }
 }

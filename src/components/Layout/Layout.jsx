@@ -5,8 +5,6 @@ import PropTypes from 'prop-types'
 
 /**
  * Layout used to wrap the main part of the application
- * @component
- * @name Layout
  * @param {string} className - classname given to the layout
  * @param {object} children - Corresponds to the content inside the layout
  * @returns {JSX.Element} - Return the layout

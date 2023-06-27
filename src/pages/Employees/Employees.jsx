@@ -33,8 +33,8 @@ export default function Employees() {
     'wealth-health',
     {
       text: {
-        primary: '#93AD18',
-        secondary: '#2aa198',
+        primary: '#3C8303', // 93AD18
+        secondary: '#196161',
       },
       background: {
         default: '#F5FFFA',

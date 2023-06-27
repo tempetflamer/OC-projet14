@@ -20,6 +20,7 @@ module.exports = {
   "plugins": [
     "react"
   ],
+  "ignorePatterns": ["webpack.config.js"],
   "rules": {
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
