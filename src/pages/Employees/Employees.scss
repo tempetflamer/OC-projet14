@@ -12,8 +12,9 @@
     padding: 0 32px 0 16px;
     @media (max-width: 767px) {
         padding: 0 24px 0 12px;
-        width: 140px;
-        height: 28px;
+        height: 48px;
+        flex: auto;
+        width: auto;
     }
 
     &:hover {
@@ -41,8 +42,8 @@
     background-color: $primary-color;
     @media (max-width: 767px) {
         font-size: 0.8rem;
-        height: 28px;
-        width: 26px;
+        height: 48px;
+        width: 48px;
     }
     &:hover {
         cursor: pointer;
@@ -64,6 +65,11 @@
     header {
         border-radius: 10px 10px 0 0;
         box-shadow: none;
+        @media (max-width: 767px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
     }
 
     div {
