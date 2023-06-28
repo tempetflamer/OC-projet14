@@ -12,7 +12,7 @@ export default function FormCreateEmployee() {
   const [messageModal, setMessageModal] = useState('')
 
   const errorMessageRef = useRef()
-  const { dispatch } = useEmployeeState()
+  const { addEmployee } = useEmployeeState()
 
   const initDate = useCallback(() => {
     const date = new Date()
@@ -59,19 +59,16 @@ export default function FormCreateEmployee() {
     ) {
       setErrorMessage('')
       try {
-        dispatch({
-          type: 'addEmployee',
-          payload: {
-            firstName: firstName,
-            lastName: lastName,
-            dateOfBirth: dateOfBirth,
-            startDate: startDate,
-            department: department,
-            street: street,
-            city: city,
-            state: state,
-            zipCode: zipCode,
-          },
+        addEmployee({
+          firstName: firstName,
+          lastName: lastName,
+          dateOfBirth: dateOfBirth,
+          startDate: startDate,
+          department: department,
+          street: street,
+          city: city,
+          state: state,
+          zipCode: zipCode,
         })
         setMessageModal('Employee Created!')
         toggleModal()
