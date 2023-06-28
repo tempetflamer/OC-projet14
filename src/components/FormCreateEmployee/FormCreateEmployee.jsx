@@ -72,6 +72,7 @@ export default function FormCreateEmployee() {
         })
         setMessageModal('Employee Created!')
         toggleModal()
+        e.target.reset()
       } catch (e) {
         setMessageModal('Error, unable to create employee!')
         toggleModal()
