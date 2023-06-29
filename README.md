@@ -1,70 +1,125 @@
-# Getting Started with Create React App
+![logo](https://raw.githubusercontent.com/tempetflamer/Assets/main/oc/oc14/logo/logo_120_compressed.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# HRnet
 
-## Available Scripts
+> Project 14 - Migrating a jQuery library to React
 
-In the project directory, you can run:
+## Missions
 
-### `npm start`
+- Convert the entire HRNet project to React.
+- Convert one of the four current jQuery plugins to React. Replace the remaining 3 jQuery plugins with React components that you'll code yourself, or that you can import from existing libraries if you're short of time.
+- Run Lighthouse performance tests comparing the old and new applications.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Resources provided
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[HRnet project repository](https://github.com/OpenClassrooms-Student-Center/P12_Front-end)
 
-### `npm test`
+### Plugins list:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [DateTimePicker](https://github.com/xdan/datetimepicker)
+- [JQuery-Modal](https://github.com/kylefox/jquery-modal)
+- [Select Menu](https://github.com/jquery/jquery-ui/blob/main/ui/widgets/selectmenu.js)
+- [DataTables](https://github.com/DataTables/DataTables)
 
-### `npm run build`
+### Plugins issues
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [DateTimePicker Issues](https://github.com/OpenClassrooms-Student-Center/P12_Front-end/issues/1)
+- [JQuery-Modal Issues](https://github.com/OpenClassrooms-Student-Center/P12_Front-end/issues/3)
+- [Dropdown Issues](https://github.com/OpenClassrooms-Student-Center/P12_Front-end/issues/4)
+- [DataTables Issues](https://github.com/OpenClassrooms-Student-Center/P12_Front-end/issues/2)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Deliverables
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[Site demo](https://hrnet-wh.netlify.app/)
 
-### `npm run eject`
+[github repository of NPM package](https://github.com/tempetflamer/dropdown_library)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+[NPM package](https://www.npmjs.com/package/custom_dropdown_comp)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Google Lighthouse test
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### JQuery app
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**<details><summary>Navigation</summary>**
 
-## Learn More
+Create employee page
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Desktop [JSON](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_create_employee_nav_desktop.json) | [HTML](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_create_employee_nav_desktop.html) | [PDF resume](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_create_employee_nav_desktop_resume-compressed.pdf) | [PDF expended](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_create_employee_nav_desktop-compressed.pdf)
+- Mobile [JSON](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_create_employee_nav_mobile.json) | [HTML](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_create_employee_nav_mobile.html) | [PDF resume](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_create_employee_nav_mobile_resume-compressed.pdf) | [PDF expended](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_create_employee_nav_mobile-compressed.pdf)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+List employees page
 
-### Code Splitting
+- Desktop [JSON](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_list_employee_nav_desktop.json) | [HTML](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_list_employee_nav_desktop.html) | [PDF resume](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_list_employee_nav_desktop_resume-compressed.pdf) | [PDF expended](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_list_employee_nav_desktop-compressed.pdf)
+- Mobile [JSON](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_list_employee_nav_mobile.json) | [HTML](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_list_employee_nav_mobile.html) | [PDF resume](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_list_employee_nav_mobile_resume-compressed.pdf) | [PDF expended](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_list_employee_nav_mobile-compressed.pdf)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+</details>
 
-### Analyzing the Bundle Size
+**<details><summary>Snapshot</summary>**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Create employee page
 
-### Making a Progressive Web App
+- Desktop [JSON](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_create_employee_snap_desktop.json) | [HTML](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_create_employee_snap_desktop.html) | [PDF resume](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_create_employee_snap_desktop_resume-compressed.pdf) | [PDF expended](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_create_employee_snap_desktop-compressed.pdf)
+- Mobile [JSON](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_create_employee_snap_mobile.json) | [HTML](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_create_employee_snap_mobile.html) | [PDF resume](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_create_employee_snap_mobile_resume-compressed.pdf) | [PDF expended](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_create_employee_snap_mobile-compressed.pdf)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+List employees page
 
-### Advanced Configuration
+- Desktop [JSON](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_list_employee_snap_desktop.json) | [HTML](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_list_employee_snap_desktop.html) | [PDF resume](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_list_employee_snap_desktop_resume-compressed.pdf) | [PDF expended](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_list_employee_snap_desktop-compressed.pdf)
+- Mobile [JSON](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_list_employee_snap_mobile.json) | [HTML](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_list_employee_snap_mobile.html) | [PDF resume](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_list_employee_snap_mobile_resume-compressed.pdf) | [PDF expended](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/jquery/hrnet_list_employee_snap_mobile-compressed.pdf)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+</details>
 
-### Deployment
+#### React app
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**<details><summary>Navigation</summary>**
 
-### `npm run build` fails to minify
+Create employee page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Desktop [JSON](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_create_employee_nav_desktop.json) | [HTML](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_create_employee_nav_desktop.html) | [PDF resume](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_create_employee_nav_desktop_resume-compressed.pdf) | [PDF expended](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_create_employee_nav_desktop-compressed.pdf)
+- Mobile [JSON](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_create_employee_nav_mobile.json) | [HTML](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_create_employee_nav_mobile.html) | [PDF resume](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_create_employee_nav_mobile_resume-compressed.pdf) | [PDF expended](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_create_employee_nav_mobile-compressed.pdf)
+
+List employees page
+
+- Desktop [JSON](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_list_employee_nav_desktop.json) | [HTML](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_list_employee_nav_desktop.html) | [PDF resume](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_list_employee_nav_desktop_resume-compressed.pdf) | [PDF expended](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_list_employee_nav_desktop-compressed.pdf)
+- Mobile [JSON](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_list_employee_nav_mobile.json) | [HTML](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_list_employee_nav_mobile.html) | [PDF resume](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_list_employee_nav_mobile_resume-compressed.pdf) | [PDF expended](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_list_employee_nav_mobile-compressed.pdf)
+
+Error 404 page
+
+- Desktop [JSON](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/error_nav_desktop.json) | [HTML](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/error_nav_desktop.html) | [PDF resume](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/error_nav_desktop_resume-compressed.pdf) | [PDF expended](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/error_nav_desktop-compressed.pdf)
+- Mobile [JSON](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/error_nav_mobile.json) | [HTML](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/error_nav_mobile.html) | [PDF resume](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/error_nav_mobile_resume-compressed.pdf) | [PDF expended](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/error_nav_mobile-compressed.pdf)
+
+</details>
+
+**<details><summary>Snapshot</summary>**
+
+Create employee page
+
+- Desktop [JSON](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_create_employee_snap_desktop.json) | [HTML](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_create_employee_snap_desktop.html) | [PDF resume](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_create_employee_snap_desktop_resume-compressed.pdf) | [PDF expended](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_create_employee_snap_desktop-compressed.pdf)
+- Mobile [JSON](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_create_employee_snap_mobile.json) | [HTML](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_create_employee_snap_mobile.html) | [PDF resume](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_create_employee_snap_mobile_resume-compressed.pdf) | [PDF expended](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_create_employee_snap_mobile-compressed.pdf)
+
+List employees page
+
+- Desktop [JSON](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_list_employee_snap_desktop.json) | [HTML](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_list_employee_snap_desktop.html) | [PDF resume](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_list_employee_snap_desktop_resume-compressed.pdf) | [PDF expended](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_list_employee_snap_desktop-compressed.pdf)
+- Mobile [JSON](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_list_employee_snap_mobile.json) | [HTML](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_list_employee_snap_mobile.html) | [PDF resume](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_list_employee_snap_mobile_resume-compressed.pdf) | [PDF expended](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/hrnet_list_employee_snap_mobile-compressed.pdf)
+
+Error 404 page
+
+- Desktop [JSON](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/error_snap_desktop.json) | [HTML](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/error_snap_desktop.html) | [PDF resume](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/error_snap_desktop_resume-compressed.pdf) | [PDF expended](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/error_snap_desktop-compressed.pdf)
+- Mobile [JSON](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/error_snap_mobile.json) | [HTML](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/error_snap_mobile.html) | [PDF resume](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/error_snap_mobile_resume-compressed.pdf) | [PDF expended](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tempetflamer/Assets/blob/main/oc/oc14/lighthouse/react/error_snap_mobile-compressed.pdf)
+
+</details>
+
+## install
+
+Clone the repository of HRnet :
+
+`git clone https://github.com/tempetflamer/OC-projet14.git`
+
+Inside this repository, install dependencies:
+
+`npm i`
+
+launch the project:
+
+`npm start`
+
+HRnet is now rendered at URL `http://localhost:3000`
