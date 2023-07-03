@@ -1,7 +1,7 @@
 import React, { useCallback, useRef, useState } from 'react'
 import { departments, states } from '../../data/data.js'
 import './FormCreateEmployee.scss'
-import { useEmployeeState } from '../../utils/EmployeeContext.jsx'
+import { useEmployeeState } from '../../context/EmployeeContext.jsx'
 import InputForm from '../InputForm/InputForm'
 import { Dropdown } from 'custom_dropdown_comp'
 import ModalForm from '../ModalForm/ModalForm'

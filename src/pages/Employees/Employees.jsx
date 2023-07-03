@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react'
 import DataTable, { createTheme } from 'react-data-table-component'
 import Layout from '../../components/Layout/Layout'
-import { useEmployeeState } from '../../utils/EmployeeContext.jsx'
+import { useEmployeeState } from '../../context/EmployeeContext.jsx'
 import './Employees.scss'
 import { columns } from '../../data/data.js'
 
